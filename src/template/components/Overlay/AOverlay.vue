@@ -1,5 +1,9 @@
 <template>
-    <div class="overlays"> 
+    <div class="overlays" 
+    :class="[
+            visibility ? 'overlays--true' : 'overlays--false', 
+            ]"
+    > 
         <div 
         class="overlay"
         :class="[
@@ -20,7 +24,8 @@ export default {
         size: String,
         classname : String,
         id : String,
-        variant : String
+        variant : String,
+        visibility : Boolean,
     },
 }
 </script>
@@ -37,7 +42,14 @@ export default {
     background-color: rgba(228, 225, 225, 0.5);  
     justify-content:center;
     align-content: center;
-    display:flex;
+  
+    &--true {
+        display: flex;
+    }
+
+    &--false {
+        display: none;
+    }
 }
 
 .overlay {

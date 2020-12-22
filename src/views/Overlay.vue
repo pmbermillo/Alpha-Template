@@ -6,29 +6,29 @@
                 <ACardHeader>DEFAULT</ACardHeader>
                 <ACardBody>
                     <b-row style="text-align:center;">
-                        <b-col>       
+                        <b-col>    
                           <b-card title="SAMPLE" aria-hidden="true">
-                            <AOverlay size="sm">
-                            </AOverlay>
-                            <b-card-text>SAMPLE
-                            </b-card-text>
-                          </b-card>
-                        </b-col>
-                        <b-col>
-                            <b-card title="SAMPLE" aria-hidden="true">
-                            <AOverlay size="md">
-                            </AOverlay>
-                            <b-card-text>SAMPLE
-                            </b-card-text>
-                          </b-card>
-                        </b-col>
-                        <b-col>       
-                          <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="lg">
+                              <AOverlay size="sm" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
                             </b-card>
+                        </b-col>
+                        <b-col>
+                            <b-card title="SAMPLE" aria-hidden="true">
+                              <AOverlay size="md"  :visibility="this.loader_2">
+                              </AOverlay>
+                              <b-card-text>SAMPLE
+                              </b-card-text>
+                            </b-card> 
+                        </b-col>
+                        <b-col>
+                            <b-card title="SAMPLE" aria-hidden="true">
+                              <AOverlay size="lg"  :visibility="this.loader_1">
+                              </AOverlay>
+                              <b-card-text>SAMPLE
+                              </b-card-text>
+                            </b-card> 
                         </b-col>
                     </b-row>
                 </ACardBody>
@@ -41,7 +41,7 @@
                     <b-row style="text-align:center;">
                         <b-col>    
                           <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="sm" variant="primary">
+                              <AOverlay size="sm" variant="primary" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -49,7 +49,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="md" variant="primary">
+                              <AOverlay size="md" variant="primary" :visibility="this.loader_2">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -57,7 +57,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="lg" variant="primary">
+                              <AOverlay size="lg" variant="primary" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -74,7 +74,7 @@
                     <b-row style="text-align:center;">
                         <b-col>    
                           <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="sm" variant="success">
+                              <AOverlay size="sm" variant="success" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -82,7 +82,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="md" variant="success">
+                              <AOverlay size="md" variant="success" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -90,7 +90,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="lg" variant="success">
+                              <AOverlay size="lg" variant="success" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -107,7 +107,7 @@
                     <b-row style="text-align:center;">
                         <b-col>    
                           <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="sm" variant="info">
+                              <AOverlay size="sm" variant="info" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -115,7 +115,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="md" variant="info">
+                              <AOverlay size="md" variant="info" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -123,7 +123,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="lg" variant="info">
+                              <AOverlay size="lg" variant="info" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -140,7 +140,7 @@
                     <b-row style="text-align:center;">
                         <b-col>    
                           <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="sm" variant="warning">
+                              <AOverlay size="sm" variant="warning" :visibility="this.loader_1" class="sample">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -148,7 +148,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="md" variant="warning">
+                              <AOverlay size="md" variant="warning" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -156,7 +156,7 @@
                         </b-col>
                         <b-col>
                             <b-card title="SAMPLE" aria-hidden="true">
-                              <AOverlay size="lg" variant="warning">
+                              <AOverlay size="lg" variant="warning" :visibility="this.loader_1">
                               </AOverlay>
                               <b-card-text>SAMPLE
                               </b-card-text>
@@ -166,7 +166,7 @@
                 </ACardBody>
             </ACard>
         </div>
-        <ACard>
+        <ACard> 
           <ACardHeader>Overlay Props</ACardHeader>
           <ACardBody>
             <label style="font-weight: bold">size : </label>
@@ -174,6 +174,9 @@
             <br>
             <label style="font-weight: bold">variant : </label>
             <label>primary warning info success</label>
+            <br>
+            <label style="font-weight: bold">visibility : </label>
+            <label>true false</label>
             <br>
             <label style="font-weight: bold">classname : </label>
             <label>your_class_name</label>
@@ -191,7 +194,13 @@
 
 <script>
 export default {
-    
+      name: "Overlay",
+      data (){
+        return {
+          loader_1: true,
+          loader_2: false,
+        }
+      },
     }
 </script>
 
